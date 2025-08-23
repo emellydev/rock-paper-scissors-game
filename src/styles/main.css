@@ -59,12 +59,20 @@ main {
     padding: 1.5rem 1rem;
     width: 90%;
     max-width: 400px;
+    padding-top: 40px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
 .badge-container, #user-score, #computer-score {
     font-size: 2.6rem;
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+#score-separator {
+    color: #eceded;
+    font-size: 1.3rem;
     font-weight: bold;
     padding: 0 1rem;
 }
@@ -153,7 +161,7 @@ main {
     display: flex;
     align-items: center; 
     justify-content: center; 
-    min-height: 4.2em;
+    min-height: 2em;
     margin: 20px 0;
 }
 
@@ -241,6 +249,49 @@ main {
     transform: scale(1.05);
 }
 
+/* for larger screens */
+@media (max-width: 1024px) {
+    body {
+        flex-direction: column;
+        padding: 0;
+        align-items: stretch;
+        justify-content: flex-start;
+        overflow-y: auto;
+    }
+
+    .header {
+        border-right: none;
+        margin-right: 0;
+        padding: 20px;
+        max-width: 100%;
+        background-color: #0f1e32;
+        border-radius: 0px 0px 10px 10px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 2.8rem;
+    }
+
+    main {
+        min-height: auto;
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .score-board {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 0 auto;
+        margin-bottom: 18px;
+        flex-shrink: 0;
+    }
+}
+
 /* For tablets and smaller screens */
 @media (max-width: 768px) {
     body { 
@@ -251,13 +302,9 @@ main {
         justify-content: flex-start;
     }
 
-    .score-board {
-        position: relative; 
-        top: 0; 
-        left: 0; 
-        transform: none;
-        margin: 0 auto;
-        flex-shrink: 0;
+    main {
+        min-height: 100vh;
+        padding-bottom: 2rem;
     }
 
     #computer-label {
@@ -280,12 +327,12 @@ main {
     }
 
     .header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         margin: 0 auto;
     }
 
     #user-score, #computer-score {
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 0 0.8rem;
     }
 
@@ -296,17 +343,17 @@ main {
 
     .result .game-hands img,
     .result .game-hands img:first-of-type {
-        width: 6rem;
-        height: 6rem;
+        width: 7rem;
+        height: 7rem;
     }
 
     .choices {
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .choices .choice img {
-        width: 6rem;
-        height: 6rem;
+        width: 7rem;
+        height: 7rem;
     }
 }
 
@@ -317,11 +364,12 @@ main {
     }
 
     .header h1 {
-        font-size: 1.6rem;
+        font-size: 2.1rem;
     }
 
     #user-score, #computer-score {
         padding: 0 0.6rem;
+        font-size: 1.8rem;
     }
 
     .badge {
@@ -330,21 +378,21 @@ main {
 
     .result .game-hands img,
     .result .game-hands img:first-of-type {
-        width: 5.5rem;
-        height: 5.5rem;
+        width: 6rem;
+        height: 6rem;
     }
 
     .message-result p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .choices {
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .choices .choice img {
-        width: 5rem;
-        height: 5rem;
+        width: 5.5rem;
+        height: 5.5rem;
     }
 }
 
@@ -355,12 +403,12 @@ main {
     }
 
     .header h1 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     #user-score, #computer-score {
-        font-size: 1.2rem;
-        padding: 0 0.5rem;
+        font-size: 1.5rem;
+        padding: 0 0.6rem;
     }
 
     .badge {
@@ -369,17 +417,17 @@ main {
 
     .result .game-hands img,
     .result .game-hands img:first-of-type {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 5rem;
+        height: 5rem;
     }
 
     .message-result p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .choices .choice img {
-        width: 4.2rem;
-        height: 4.2rem;
+        width: 4.5rem;
+        height: 4.5rem;
         padding: 10px;
     }
 }
@@ -388,5 +436,8 @@ main {
 @media (max-height: 800px) {
     body {
         overflow-y: auto;
+    }
+    h1 {
+        font-size: 1.6rem; 
     }
 }
