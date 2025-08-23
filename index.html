@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel Tesoura</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="icon" type="image/png" href="src/images/favicon.png">
+</head>
+<body>
+        <header class="header">
+            <h1>Pedra Papel Tesoura</h1>
+            <div id="play-again-container"></div>
+        </header>
+    <main>
+        <div class="score-board">
+            <div id="user-label" class="user badge">Você</div>
+            <div id="computer-label" class="comp badge">Oponente</div>
+            <span id="user-score">0</span>:<span id="computer-score">0</span>
+        </div>
+
+        <div class="result">
+            <div class="game-hands">
+                <img src="src/images/rock.png" alt="Mão do jogador">
+                <img src="src/images/rock.png" alt="Mão do oponente">
+            </div>  
+        </div>
+
+        <div class="message message-result">
+            <p>Faça sua Jogada!</p>
+        </div>
+
+        <div class="choices">
+            <div id="rock" class="choice">
+                <img src="src/images/rock.png" alt="Escolha Pedra">
+            </div>
+            <div id="paper" class="choice">
+                <img src="src/images/paper.png" alt="Escolha Papel">
+            </div>
+            <div id="scissors" class="choice">
+                <img src="src/images/scissors.png" alt="Escolha Tesoura">
+            </div>
+        </div>
+    </main>
+    <script src="src/scripts/main.js"></script>
+</body>
+</html>
