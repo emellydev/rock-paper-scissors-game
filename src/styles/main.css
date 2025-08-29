@@ -5,7 +5,7 @@ body {
     background: -webkit-linear-gradient(273deg,rgba(17, 38, 66, 1) 0%, rgba(33, 77, 128, 1) 100%);
     background: -moz-linear-gradient(273deg,rgba(17, 38, 66, 1) 0%, rgba(33, 77, 128, 1) 100%);
     background: linear-gradient(273deg,rgba(17, 38, 66, 1) 0%, rgba(33, 77, 128, 1) 100%);
-    min-height: 100vh; 
+    height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@ main {
 
 .score-board {
     position: relative;
-    top: -45px; 
+    top: -48px; 
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -56,10 +56,9 @@ main {
     display: flex;
     justify-content: center;
     gap: 2px;
-    padding: 1.5rem 1rem;
+    padding: 1.8rem 1rem;
     width: 90%;
     max-width: 400px;
-    padding-top: 40px;
     border-radius: 0px 0px 10px 10px;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
