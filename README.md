@@ -2,6 +2,8 @@
 
 Este é um projeto simples do clássico jogo "Pedra, Papel e Tesoura" desenvolvido com tecnologias web básicas (HTML, CSS e JavaScript). O objetivo foi criar uma interface interativa e divertida onde o usuário pode jogar contra o computador e acompanhar o placar.
 
+[![Project Demonstration](src/images/project-demo.gif)](https://emellybmuniz.github.io/rock-paper-scissors-game/)
+
 ## ✨ Funcionalidades
 
 - **Jogabilidade Clássica**: Escolha entre Pedra, Papel ou Tesoura.
